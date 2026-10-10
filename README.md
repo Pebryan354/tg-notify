@@ -1,6 +1,6 @@
-# TG Notify (Go Library)
+# Telegram Notify
 
-Library Go ringan untuk monitoring dan pengiriman notifikasi ke Telegram (melalui Telegram Bot API). Dirancang khusus untuk alerting sistem ketika terjadi exception/error atau ketika terjadi kendala operasional (seperti integrasi dengan pihak ke-3 gagal).
+Library Go untuk monitoring dan pengiriman notifikasi ke Telegram (melalui Telegram Bot API). Dirancang khusus untuk alerting sistem ketika terjadi exception/error atau ketika terjadi kendala operasional (seperti integrasi dengan pihak ke-3 gagal).
 
 Library ini **tidak membutuhkan database**, mudah diintegrasikan, dan mendukung fitur forum topic (**thread**) Telegram serta mode **asinkron** (background worker).
 
@@ -84,6 +84,7 @@ if err := processTransaction(); err != nil {
 ```
 
 **Tampilan di Telegram:**
+
 ```text
 🚨 [Payment Service] [PRODUCTION] SYSTEM ERROR
 
@@ -124,6 +125,7 @@ _ = notifier.NotifyAlert(ctx,
 ```
 
 **Tampilan di Telegram:**
+
 ```text
 ⚠️ [Payment Service] [PRODUCTION] THIRD-PARTY API FAILURE
 
