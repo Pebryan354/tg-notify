@@ -1,0 +1,15 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, coverage, and reports
+*.test
+coverage.out
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
